@@ -11,13 +11,13 @@ COPY go.mod ./
 
 
 # Download dependencies (if any)
-RUN go mod tidy
+RUN go mod download
 
 # Copy the rest of the source code
 COPY . .
 
 # Build the Go binary
-RUN go build -o healthapp ./cmd/server
+RUN go build -o nix_it_lab ./cmd/server
 
 # -----------------------------
 # Stage 2: Create a minimal image
@@ -34,4 +34,4 @@ COPY --from=builder /app/healthapp .
 EXPOSE 8080
 
 # Run the binary
-CMD ["./healthapp"]
+CMD ["./nix_it_lab"]
