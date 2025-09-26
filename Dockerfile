@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Copy go.mod and go.sum first (if any) for caching dependencies
 COPY go.mod ./
-COPY go.sum ./
+
 
 # Download dependencies (if any)
 RUN go mod tidy
