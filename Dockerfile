@@ -28,7 +28,7 @@ FROM alpine:latest
 WORKDIR /root/
 
 # Copy binary from builder stage
-COPY --from=builder /app/healthapp .
+COPY --from=builder /app/nix_it_lab .
 
 # Expose port 8080
 EXPOSE 8080
