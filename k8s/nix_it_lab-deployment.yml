@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nix_it_lab-deployment
+  name: nix-it-lab-deployment
   namespace: default
   labels:
-    app: nix_it_lab
+    app: nix-it-lab
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nix_it_lab
+      app: nix-it-lab
   template:
     metadata:
       labels:
-        app: nix_it_lab
+        app: nix-it-lab
     spec:
       containers:
-        - name: nix_it_lab
+        - name: nix-it-lab
           image: nitace/nix_it_lab:latest
           ports:
             - containerPort: 8080

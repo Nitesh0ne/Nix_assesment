@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nix_it_lab-service
+  name: nix-it-lab-service
   namespace: default
 spec:
   type: LoadBalancer       # Exposes the service externally
