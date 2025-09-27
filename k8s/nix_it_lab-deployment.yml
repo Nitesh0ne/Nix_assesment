@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nix_it_lab-deployment
+   namespace: default
   labels:
     app: nix_it_lab
 spec:
