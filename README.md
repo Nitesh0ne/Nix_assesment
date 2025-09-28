@@ -143,14 +143,7 @@ curl http://<EXTERNAL-IP>/health
 
 ---
 
-## Optional Enhancements
 
-* Use Google Artifact Registry for private images.
-* Add **Horizontal Pod Autoscaler** for scaling.
-* Add **liveness/readiness probes** in Deployment.
-* Add `.env` for environment variables if you add a database.
-
----
 
 ## Notes
 
