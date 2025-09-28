@@ -140,6 +140,9 @@ kubectl get svc
 ```bash
 curl http://<EXTERNAL-IP>/health
 ```
+```
+http://a25d67d4e5ce74ad8827e2b2e0656e6b-317484364.us-east-1.elb.amazonaws.com/health
+```
 
 ---
 
