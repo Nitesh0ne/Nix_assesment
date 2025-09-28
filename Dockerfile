@@ -26,7 +26,7 @@ WORKDIR /root/
 COPY --from=builder /app/nix_it_lab .
 
 # Expose port 8080
-EXPOSE 8080
+EXPOSE 9000
 
 # Run the app
 CMD ["./nix_it_lab"]

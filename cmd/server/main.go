@@ -10,8 +10,8 @@ import (
 func main() {
 	http.HandleFunc("/health", handlers.HealthHandler)
 
-	log.Println("Server is running on http://localhost:8080")
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	log.Println("Server is running on http://localhost:9000")
+	if err := http.ListenAndServe(":9000", nil); err != nil {
 		log.Fatalf("server failed: %v", err)
 	}
 }

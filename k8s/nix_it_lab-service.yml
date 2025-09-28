@@ -10,4 +10,4 @@ spec:
   ports:
     - protocol: TCP
       port: 80             # Port exposed outside
-      targetPort: 8080     # Port inside the container
+      targetPort: 9000    # Port inside the container
